@@ -32,6 +32,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.BtnCounter = new System.Windows.Forms.Button();
             this.textBoxCounter = new System.Windows.Forms.TextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // BtnReadFile
@@ -54,7 +55,7 @@
             // 
             // BtnCounter
             // 
-            this.BtnCounter.Location = new System.Drawing.Point(497, 80);
+            this.BtnCounter.Location = new System.Drawing.Point(348, 52);
             this.BtnCounter.Name = "BtnCounter";
             this.BtnCounter.Size = new System.Drawing.Size(75, 40);
             this.BtnCounter.TabIndex = 2;
@@ -64,17 +65,27 @@
             // 
             // textBoxCounter
             // 
-            this.textBoxCounter.Location = new System.Drawing.Point(461, 126);
+            this.textBoxCounter.Location = new System.Drawing.Point(303, 126);
             this.textBoxCounter.Name = "textBoxCounter";
             this.textBoxCounter.Size = new System.Drawing.Size(157, 26);
             this.textBoxCounter.TabIndex = 3;
             this.textBoxCounter.TextChanged += new System.EventHandler(this.textBoxCounter_TextChanged);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(544, 126);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(216, 265);
+            this.richTextBox2.TabIndex = 4;
+            this.richTextBox2.Text = "";
+            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.textBoxCounter);
             this.Controls.Add(this.BtnCounter);
             this.Controls.Add(this.richTextBox1);
@@ -93,6 +104,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button BtnCounter;
         private System.Windows.Forms.TextBox textBoxCounter;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 
